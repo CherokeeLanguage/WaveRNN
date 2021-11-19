@@ -44,7 +44,7 @@ def process_data(data_root, data_dirs, output_path):
     with open(os.path.join(output_path, 'dataset.pkl'), 'wb') as f:
         pickle.dump(dataset, f)
     
-    print(f"Preprocessing done, total processed wav files: {len(wav_files)}")
+    print(f"Preprocessing done, total processed wav files: {c-1:,}")
     print(f"Processed files are located in:{os.path.abspath(output_path)}")
 
 
